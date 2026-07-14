@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KANCHI GUPTA — AI Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="blueprint-grid"></div>
+<div class="crosshair tl"></div>
+<div class="crosshair tr"></div>
+<div class="crosshair bl"></div>
+<div class="crosshair br"></div>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="nav-inner">
+    <div class="logo"><span class="dot"></span>KG<span></span></div>
+    <ul class="nav-links">
+      <li><a href="#about">ABOUT</a></li>
+      <li><a href="#skills">SKILLS</a></li>
+      <li><a href="#experience">EXPERIENCE</a></li>
+      <li><a href="#projects">PROJECTS</a></li>
+      <li><a href="#github">GITHUB</a></li>
+      <li><a href="#leetcode">LEETCODE</a></li>
+      <li><a href="#contact">CONTACT</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="icon-btn" aria-label="Search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </button>
+      <button class="icon-btn" id="themeToggle" aria-label="Toggle theme">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="container">
+    <div class="hero-top">
+      <div class="avatar-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg>
+        <div class="avatar-tag">IMG_0X4F // 180×180</div>
+      </div>
+      <div class="hero-name-block fade-up">
+        <div class="eyebrow">ENGINEER.EXE</div>
+        <h1 class="hero-name">KANCHI<br>GUPTA</h1>
+        <p class="hero-title">AI Engineer building autonomous agent systems and production ML infrastructure. <b>4+ years</b> designing LLM pipelines, RAG systems, and backend architecture for products that ship.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#contact">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4Z"/></svg>
+            GET IN TOUCH
+          </a>
+          <a class="btn btn-ghost" href="#" onclick="return false;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M7 10l5 5 5-5"/><path d="M12 15V3"/></svg>
+            DOWNLOAD RESUME
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="status-grid fade-up">
+      <div class="status-cell">
+        <div class="status-label"><span class="pulse-dot"></span>AVAILABILITY</div>
+        <div class="status-value">Open to work</div>
+      </div>
+      <div class="status-cell">
+        <div class="status-label">LOCATION</div>
+        <div class="status-value">Gwalior, IN</div>
+      </div>
+      <div class="status-cell">
+        <div class="status-label">LOCAL TIME</div>
+        <div class="status-value" id="localTime">--:--:--</div>
+      </div>
+      <div class="status-cell">
+        <div class="status-label">EMAIL</div>
+        <a class="status-value link" href="mailto:kanchigupta18@gmail.com">kanchigupta18@gmail.com</a>
+      </div>
+      <div class="status-cell">
+       <div class="status-label">GITHUB</div>
+       <a class="status-value link"
+         href="https://github.com/kanchi1802"
+         target="_blank"
+         rel="noopener noreferrer">
+         github.com/kanchi1802
+       </a>
+      </div>
+      <div class="status-cell">
+       <div class="status-label">LINKEDIN</div>
+       <a class="status-value link"
+         href="https://www.linkedin.com/in/kanchi-gupta1802"
+         target="_blank"
+         rel="noopener noreferrer">
+         in/kanchi-gupta1802
+       </a>
+      </div>
+      <div class="status-cell">
+        <div class="status-label">EXPERIENCE</div>
+        <div class="status-value">4.2 YRS</div>
+      </div>
+      <div class="status-cell">
+        <div class="status-label">STACK.FOCUS</div>
+        <div class="status-value">LLM / AGENTS</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="section-head fade-up">
+      <div>
+        <div class="eyebrow">01 / ABOUT</div>
+        <h2 class="section-title">Background</h2>
+      </div>
+      <div class="section-meta">FILE: about.md<br>STATUS: INDEXED</div>
+    </div>
+
+    <div class="about-grid fade-up">
+      <div>
+        <p class="about-lead">I design and ship <span>agentic AI systems</span> — from retrieval pipelines to multi-agent orchestration — and the backend infrastructure that keeps them reliable in production.</p>
+        <p style="margin-top:24px; color:var(--text-dim); font-size:13.5px; max-width:460px;">Most recently focused on reducing LLM inference cost by 40% across a multi-tenant platform, and building internal agent tooling used by three product teams.</p>
+      </div>
+      <div class="terminal-block">
+        <div class="terminal-head"><span class="tdot"></span><span class="tdot"></span><span class="tdot"></span>&nbsp;&nbsp;whoami.sh</div>
+        <div class="terminal-body">
+          <div class="term-line"><span class="prompt">$</span><span class="val">role</span> → AI Engineer / Backend Systems</div>
+          <div class="term-line"><span class="prompt">$</span><span class="val">based_in</span> → Bhopal, India (GMT+5:30)</div>
+          <div class="term-line"><span class="prompt">$</span><span class="val">focus</span> → LLM agents, RAG, distributed systems</div>
+          <div class="term-line"><span class="prompt">$</span><span class="val">currently</span> → Building agent infra @ Lattice Labs</div>
+          <div class="term-line"><span class="prompt">$</span><span class="val">side_project</span> → Open-source RAG eval toolkit</div>
+          <div class="term-line"><span class="prompt">$</span><span class="val">interests</span> → Systems design, chess, synthesizers</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="section" id="skills">
+  <div class="container">
+    <div class="section-head fade-up">
+      <div>
+        <div class="eyebrow">02 / STACK</div>
+        <h2 class="section-title">Skills &amp; Tools</h2>
+      </div>
+      <div class="section-meta">FILE: stack.json<br>ENTRIES: 24</div>
+    </div>
+
+    <div class="fade-up">
+      <div class="skills-cat">
+        <div class="skills-cat-label">Languages</div>
+        <div class="chip-cloud">
+          <div class="chip">Python</div><div class="chip">TypeScript</div><div class="chip">Java</div><div class="chip">Go</div><div class="chip">SQL</div><div class="chip">Bash</div>
+        </div>
+      </div>
+      <div class="skills-cat">
+        <div class="skills-cat-label">AI / ML</div>
+        <div class="chip-cloud">
+          <div class="chip">LangChain</div><div class="chip">LangGraph</div><div class="chip">AI Agents</div><div class="chip">LLM Fine-tuning</div><div class="chip">RAG</div><div class="chip">HuggingFace</div><div class="chip">Ollama</div><div class="chip">ChromaDB</div><div class="chip">Pinecone</div><div class="chip">PyTorch</div>
+        </div>
+      </div>
+      <div class="skills-cat">
+        <div class="skills-cat-label">Backend / Infra</div>
+        <div class="chip-cloud">
+          <div class="chip">FastAPI</div><div class="chip">Node.js</div><div class="chip">MySQL</div><div class="chip">PostgreSQL</div><div class="chip">Redis</div><div class="chip">Docker</div><div class="chip">Kubernetes</div><div class="chip">AWS</div><div class="chip">REST APIs</div><div class="chip">gRPC</div>
+        </div>
+      </div>
+      <div class="skills-cat">
+        <div class="skills-cat-label">Tooling</div>
+        <div class="chip-cloud">
+          <div class="chip">Git</div><div class="chip">CI/CD</div><div class="chip">Terraform</div><div class="chip">Grafana</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="section" id="experience">
+  <div class="container">
+    <div class="section-head fade-up">
+      <div>
+        <div class="eyebrow">03 / TIMELINE</div>
+        <h2 class="section-title">Experience</h2>
+      </div>
+      <div class="section-meta">FILE: experience.log<br>RECORDS: 3</div>
+    </div>
+
+    <div class="timeline fade-up" id="expTimeline">
+      <div class="tl-item">
+        <div class="tl-dot">01</div>
+        <div class="tl-card" onclick="toggleCard(this)">
+          <div class="tl-card-head">
+            <div class="tl-card-main">
+              <div class="tl-role">Senior AI Engineer</div>
+              <div class="tl-org"><b>Lattice Labs</b> · Bhopal, IN (Remote)</div>
+            </div>
+            <div class="tl-duration">2024 — PRESENT</div>
+            <div class="tl-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></div>
+          </div>
+          <div class="tl-body">
+            <div class="tl-body-inner">
+              <ul class="tl-desc">
+                <li>Designed a multi-agent orchestration layer handling 2M+ monthly LLM calls.</li>
+                <li>Cut inference cost 40% via routing, caching, and quantized fallback models.</li>
+                <li>Built internal RAG evaluation harness adopted by 3 product teams.</li>
+              </ul>
+              <div class="tl-chips"><div class="chip">LangGraph</div><div class="chip">Python</div><div class="chip">Redis</div><div class="chip">AWS</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-dot">02</div>
+        <div class="tl-card" onclick="toggleCard(this)">
+          <div class="tl-card-head">
+            <div class="tl-card-main">
+              <div class="tl-role">Backend Engineer</div>
+              <div class="tl-org"><b>Northstack Systems</b> · Pune, IN</div>
+            </div>
+            <div class="tl-duration">2022 — 2024</div>
+            <div class="tl-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></div>
+          </div>
+          <div class="tl-body">
+            <div class="tl-body-inner">
+              <ul class="tl-desc">
+                <li>Owned core payments API serving 40k req/min at peak load.</li>
+                <li>Migrated monolith to service-oriented architecture on Kubernetes.</li>
+                <li>Reduced P95 latency from 620ms to 180ms through query and cache redesign.</li>
+              </ul>
+              <div class="tl-chips"><div class="chip">Java</div><div class="chip">MySQL</div><div class="chip">Kubernetes</div><div class="chip">Kafka</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-dot">03</div>
+        <div class="tl-card" onclick="toggleCard(this)">
+          <div class="tl-card-head">
+            <div class="tl-card-main">
+              <div class="tl-role">Software Engineer Intern</div>
+              <div class="tl-org"><b>Verge Analytics</b> · Remote</div>
+            </div>
+            <div class="tl-duration">2021 — 2022</div>
+            <div class="tl-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></div>
+          </div>
+          <div class="tl-body">
+            <div class="tl-body-inner">
+              <ul class="tl-desc">
+                <li>Built internal dashboarding tools for data pipeline observability.</li>
+                <li>Wrote ETL jobs processing 10GB+ daily event data.</li>
+              </ul>
+              <div class="tl-chips"><div class="chip">Python</div><div class="chip">Airflow</div><div class="chip">PostgreSQL</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section class="section" id="education">
+  <div class="container">
+    <div class="section-head fade-up">
+      <div>
+        <div class="eyebrow">04 / RECORDS</div>
+        <h2 class="section-title">Education</h2>
+      </div>
+      <div class="section-meta">FILE: education.log<br>RECORDS: 2</div>
+    </div>
+
+    <div class="timeline fade-up">
+      <div class="tl-item">
+        <div class="tl-dot">01</div>
+        <div class="tl-card" onclick="toggleCard(this)">
+          <div class="tl-card-head">
+            <div class="tl-card-main">
+              <div class="tl-role">B.Tech, Computer Science</div>
+              <div class="tl-org"><b>Maulana Azad National Institute of Technology</b> · Bhopal</div>
+            </div>
+            <div class="tl-duration">2018 — 2022</div>
+            <div class="tl-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></div>
+          </div>
+          <div class="tl-body">
+            <div class="tl-body-inner">
+              <div class="tl-desc" style="margin-bottom:14px;">Graduated with distinction. Final-year thesis on retrieval-augmented question answering over structured documents.</div>
+              <div class="tl-chips"><div class="chip">Data Structures</div><div class="chip">Distributed Systems</div><div class="chip">Machine Learning</div><div class="chip">Operating Systems</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-dot">02</div>
+        <div class="tl-card" onclick="toggleCard(this)">
+          <div class="tl-card-head">
+            <div class="tl-card-main">
+              <div class="tl-role">Higher Secondary, PCM</div>
+              <div class="tl-org"><b>Delhi Public School</b> · Bhopal</div>
+            </div>
+            <div class="tl-duration">2016 — 2018</div>
+            <div class="tl-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></div>
+          </div>
+          <div class="tl-body">
+            <div class="tl-body-inner">
+              <div class="tl-desc" style="margin-bottom:14px;">Focused on Physics, Chemistry, and Mathematics. Led the school's robotics club.</div>
+              <div class="tl-chips"><div class="chip">Mathematics</div><div class="chip">Physics</div><div class="chip">Computer Science</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section" id="projects">
+  <div class="container">
+    <div class="section-head fade-up">
+      <div>
+        <div class="eyebrow">05 / BUILDS</div>
+        <h2 class="section-title">Projects</h2>
+      </div>
+      <div class="section-meta">FILE: projects.dir<br>ENTRIES: 4</div>
+    </div>
+
+    <div class="project-grid fade-up">
+
+      <div class="project-card">
+        <div class="project-head">
+          <div>
+            <div class="project-num">PRJ_001</div>
+            <div class="project-name">Ragnostic</div>
+            <div class="project-tag">Open-source evaluation toolkit for RAG pipelines</div>
+          </div>
+          <div class="project-icons">
+            <a class="icon-btn" href="#" onclick="return false;" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 3.8 5.4 4.1 5.4 4.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 10.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V22"/></svg></a>
+            <a class="icon-btn" href="#" onclick="return false;" aria-label="Live demo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg></a>
+          </div>
+        </div>
+        <div class="project-toggle" onclick="toggleProject(this)">
+          VIEW DETAILS <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <div class="project-details">
+          <div class="project-details-inner">
+            <div class="project-desc">A CLI and dashboard for scoring retrieval quality, hallucination rate, and answer faithfulness across RAG pipelines. Used internally to benchmark 6 vector store configurations before production rollout. 340+ GitHub stars.</div>
+            <div class="project-chips"><div class="chip">Python</div><div class="chip">ChromaDB</div><div class="chip">LangChain</div><div class="chip">FastAPI</div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-head">
+          <div>
+            <div class="project-num">PRJ_002</div>
+            <div class="project-name">Orchestra</div>
+            <div class="project-tag">Multi-agent workflow engine with visual debugging</div>
+          </div>
+          <div class="project-icons">
+            <a class="icon-btn" href="#" onclick="return false;" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 3.8 5.4 4.1 5.4 4.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 10.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V22"/></svg></a>
+            <a class="icon-btn" href="#" onclick="return false;" aria-label="Live demo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg></a>
+          </div>
+        </div>
+        <div class="project-toggle" onclick="toggleProject(this)">
+          VIEW DETAILS <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <div class="project-details">
+          <div class="project-details-inner">
+            <div class="project-desc">A graph-based orchestration engine for coordinating specialized agents with a live execution tracer. Includes retry policies, cost tracking per node, and a replayable execution log for debugging failures.</div>
+            <div class="project-chips"><div class="chip">LangGraph</div><div class="chip">TypeScript</div><div class="chip">Redis</div><div class="chip">WebSockets</div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-head">
+          <div>
+            <div class="project-num">PRJ_003</div>
+            <div class="project-name">Ledgerline</div>
+            <div class="project-tag">High-throughput payments reconciliation service</div>
+          </div>
+          <div class="project-icons">
+            <a class="icon-btn" href="#" onclick="return false;" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 3.8 5.4 4.1 5.4 4.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 10.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V22"/></svg></a>
+            <a class="icon-btn" href="#" onclick="return false;" aria-label="Live demo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg></a>
+          </div>
+        </div>
+        <div class="project-toggle" onclick="toggleProject(this)">
+          VIEW DETAILS <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <div class="project-details">
+          <div class="project-details-inner">
+            <div class="project-desc">A reconciliation service matching payment events across three upstream providers in near real-time. Processes 40k transactions/minute at peak with a custom conflict-resolution engine.</div>
+            <div class="project-chips"><div class="chip">Java</div><div class="chip">Kafka</div><div class="chip">MySQL</div><div class="chip">Kubernetes</div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-head">
+          <div>
+            <div class="project-num">PRJ_004</div>
+            <div class="project-name">Terraform Studio</div>
+            <div class="project-tag">Visual infra-as-code editor for small teams</div>
+          </div>
+          <div class="project-icons">
+            <a class="icon-btn" href="#" onclick="return false;" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 3.8 5.4 4.1 5.4 4.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 10.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V22"/></svg></a>
+            <a class="icon-btn" href="#" onclick="return false;" aria-label="Live demo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg></a>
+          </div>
+        </div>
+        <div class="project-toggle" onclick="toggleProject(this)">
+          VIEW DETAILS <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <div class="project-details">
+          <div class="project-details-inner">
+            <div class="project-desc">A drag-and-drop editor that generates and validates Terraform modules for small infra teams unfamiliar with HCL, with built-in cost estimation and drift detection.</div>
+            <div class="project-chips"><div class="chip">Go</div><div class="chip">Terraform</div><div class="chip">React</div><div class="chip">AWS</div></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- GITHUB -->
+<section class="section" id="github">
+  <div class="container">
+    <div class="section-head fade-up">
+      <div>
+        <div class="eyebrow">06 / ACTIVITY</div>
+        <h2 class="section-title">GitHub</h2>
+      </div>
+      <div class="section-meta">FILE: activity.stream<br>SYNCED: LIVE</div>
+    </div>
+
+    <div class="fade-up">
+      <div class="gh-grid">
+        <div class="gh-stat"><div class="gh-stat-num" id="ghContrib">1,842</div><div class="gh-stat-label">Contributions / yr</div></div>
+        <div class="gh-stat"><div class="gh-stat-num">37</div><div class="gh-stat-label">Public repos</div></div>
+        <div class="gh-stat"><div class="gh-stat-num" id="ghStars">612</div><div class="gh-stat-label">Stars earned</div></div>
+        <div class="gh-stat"><div class="gh-stat-num" id="ghPRs">210</div><div class="gh-stat-label">PRs merged</div></div>
+      </div>
+
+      <div class="lc-chart-card">
+        <div class="lc-chart-head">
+          <span>COMMIT ACTIVITY · LAST 30 DAYS</span>
+          <span class="lc-live"><span class="pulse-dot"></span>LIVE</span>
+        </div>
+        <div class="lc-chart-wrap">
+          <svg id="ghChart" viewBox="0 0 700 220" preserveAspectRatio="none"></svg>
+        </div>
+        <div class="lc-rating-now">
+          <div class="num" id="ghCommitsNow">—</div>
+          <div class="delta" id="ghCommitsDelta">syncing…</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LEETCODE -->
+<section class="section" id="leetcode">
+  <div class="container">
+    <div class="section-head fade-up">
+      <div>
+        <div class="eyebrow">07 / COMPETITIVE</div>
+        <h2 class="section-title">LeetCode</h2>
+      </div>
+      <div class="section-meta">FILE: leetcode.sync<br>MODE: REAL-TIME</div>
+    </div>
+
+    <div class="fade-up">
+      <div class="lc-grid">
+        <div class="lc-stat"><div class="lc-stat-num" id="lcSolved">—</div><div class="lc-stat-label">Problems Solved</div></div>
+        <div class="lc-stat"><div class="lc-stat-num" id="lcRank">—</div><div class="lc-stat-label">Global Rank</div></div>
+        <div class="lc-stat"><div class="lc-stat-num" id="lcStreak">—</div><div class="lc-stat-label">Day Streak</div></div>
+        <div class="lc-stat"><div class="lc-stat-num" id="lcAccept">—</div><div class="lc-stat-label">Acceptance Rate</div></div>
+      </div>
+
+      <div class="contrib-card">
+        <div class="contrib-head">
+          <span>SUBMISSION HEATMAP</span>
+          <span class="mono-small">LAST 52 WEEKS</span>
+        </div>
+        <div class="contrib-grid" id="lcContribGrid"></div>
+        <div class="contrib-legend">
+          LESS
+          <div class="contrib-cell" style="background:#1c1c1c"></div>
+          <div class="contrib-cell" style="background:#3a3a3a"></div>
+          <div class="contrib-cell" style="background:#6b6b6b"></div>
+          <div class="contrib-cell" style="background:#ffffff"></div>
+          MORE
+        </div>
+      </div>
+
+      <div class="lc-breakdown">
+        <div class="lc-diff-row">
+          <div class="lc-diff-label">EASY</div>
+          <div class="lc-diff-track"><div class="lc-diff-fill" style="width:88%; opacity:.5;"></div></div>
+          <div class="lc-diff-count">312 / 355</div>
+        </div>
+        <div class="lc-diff-row">
+          <div class="lc-diff-label">MEDIUM</div>
+          <div class="lc-diff-track"><div class="lc-diff-fill" style="width:61%; opacity:.75;"></div></div>
+          <div class="lc-diff-count">441 / 720</div>
+        </div>
+        <div class="lc-diff-row">
+          <div class="lc-diff-label">HARD</div>
+          <div class="lc-diff-track"><div class="lc-diff-fill" style="width:29%;"></div></div>
+          <div class="lc-diff-count">89 / 310</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+  <div class="container">
+    <div class="section-head fade-up">
+      <div>
+        <div class="eyebrow">08 / CONNECT</div>
+        <h2 class="section-title">Get In Touch</h2>
+      </div>
+      <div class="section-meta">FILE: contact.sh<br>RESPONSE: ~24H</div>
+    </div>
+
+    <div class="contact-grid fade-up">
+      <div class="contact-card">
+        <div class="contact-row">
+          <div class="contact-row-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>Email</div>
+          <a class="contact-row-value" href="mailto:hello@aniketverma.dev">hello@aniketverma.dev</a>
+        </div>
+        <div class="contact-row">
+          <div class="contact-row-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6Z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>LinkedIn</div>
+          <a class="contact-row-value" href="#" onclick="return false;">in/aniket-verma</a>
+        </div>
+        <div class="contact-row">
+          <div class="contact-row-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 3.8 5.4 4.1 5.4 4.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 10.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V22"/></svg>GitHub</div>
+          <a class="contact-row-value" href="#" onclick="return false;">github.com/aniketverma</a>
+        </div>
+        <div class="contact-row">
+          <div class="contact-row-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M7 10l5 5 5-5"/><path d="M12 15V3"/></svg>Resume</div>
+          <a class="contact-row-value" href="#" onclick="return false;">Download PDF</a>
+        </div>
+      </div>
+
+      <form id="contactForm">
+        <div class="form-field">
+          <label>Name</label>
+          <input type="text" placeholder="Your name" required>
+        </div>
+        <div class="form-field">
+          <label>Email</label>
+          <input type="email" placeholder="you@company.com" required>
+        </div>
+        <div class="form-field">
+          <label>Message</label>
+          <textarea placeholder="What are you building?" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">
+          SEND MESSAGE
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4Z"/></svg>
+        </button>
+        <div class="form-note" id="formNote">// messages are typically answered within 24 hours</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-left">© 2026 KANCHI GUPTA — BUILT FROM SCRATCH</div>
+      <div class="footer-social">
+        <a class="icon-btn" href="#" onclick="return false;" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 3.8 5.4 4.1 5.4 4.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 10.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V22"/></svg></a>
+        <a class="icon-btn" href="#" onclick="return false;" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6Z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+        <a class="icon-btn" href="mailto:hello@aniketverma.dev" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg></a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
